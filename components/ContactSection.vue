@@ -1,11 +1,16 @@
 <template>
   <Section id="contact" class="flex flex-col">
-    <h4 class="text-2xl text-gray-300 text-center">Contact</h4>
+    <div class="flex items-center justify-center">
+      <h4 class="text-2xl text-gray-300 text-center">Contact</h4>
+      <div class="i-fxemoji:rightspeechbubble ml-2 text-xl"></div>
+    </div>
     <p class="text-center text-gray-400 text-lg mt-4 px-10">
       Send us a message and we'll get back to you as soon as possible!
     </p>
     <div class="mt-9 flex gap-5 text-5xl justify-center flex-wrap px-10">
       <form
+        id="contact"
+        name="contact"
         accept-charset="UTF-8"
         action="https://www.formbackend.com/f/{your-identifier}"
         method="POST"

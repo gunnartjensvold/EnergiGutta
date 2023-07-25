@@ -1,10 +1,12 @@
 <template>
-  <Section
-    id="technologies"
-    class="flex flex-col"
-  >
-    <h4 class="text-2xl text-gray-300 text-center">Technology stack</h4>
-    <p class="text-center text-gray-400 text-lg mt-4 px-10">We are proficient in technologies used by companies world wide</p>
+  <Section id="technologies" class="flex flex-col">
+    <div class="flex items-center justify-center">
+      <h4 class="text-2xl text-gray-300 text-center">Technology stack</h4>
+      <div class="i-fxemoji:oldpersonalcomputer ml-2 text-xl"></div>
+    </div>
+    <p class="text-center text-gray-400 text-lg mt-4 px-10">
+      We are proficient in technologies used by companies world wide
+    </p>
     <div class="mt-9 flex gap-5 text-5xl justify-center flex-wrap px-10">
       <div class="i-logos:vue"></div>
       <div class="i-logos:vueuse"></div>

@@ -24,20 +24,24 @@
 <script setup lang="ts">
 const links = [
   {
-    title: 'Home',
-    link: '#home'
+    title: "Home",
+    link: "/#home",
   },
   {
-    title: 'Technologies',
-    link: '#technologies'
+    title: "Technologies",
+    link: "/#technologies",
   },
   {
-    title: 'Skills',
-    link: '#skills'
+    title: "Skills",
+    link: "/#skills",
   },
   {
-    title: 'Contact',
-    link: '#contact'
-  }
-]
+    title: "Contact",
+    link: "/#contact",
+  },
+  {
+    title: "Demos",
+    link: "/demos",
+  },
+];
 </script>

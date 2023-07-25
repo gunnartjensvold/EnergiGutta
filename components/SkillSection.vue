@@ -1,6 +1,9 @@
 <template>
   <Section id="skills" class="flex flex-col">
-    <h4 class="text-2xl text-gray-300 text-center">The team</h4>
+    <div class="flex items-center justify-center">
+      <h4 class="text-2xl text-gray-300 text-center">The team</h4>
+      <div class="i-fxemoji:sportsmedal ml-2 text-xl"></div>
+    </div>
     <p class="text-center text-gray-400 text-lg mt-4 px-10">
       We are an efficient group with a wide range of knowledge, ready to meet
       your technological requirements
