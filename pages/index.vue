@@ -6,13 +6,14 @@
     <HeroSection></HeroSection>
     <TechnologySection></TechnologySection>
     <SkillSection></SkillSection>
+    <ContactSection></ContactSection>
   </div>
 </template>
 
 <style>
 html {
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(20, 18, 23);
 }
 
