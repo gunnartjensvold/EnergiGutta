@@ -1,5 +1,4 @@
 <template>
-  <NavBar></NavBar>
   <Section id="" class="flex flex-col items-center text-center">
     <div class="flex pt-20 flex-col">
       <div class="flex justify-center items-center">
