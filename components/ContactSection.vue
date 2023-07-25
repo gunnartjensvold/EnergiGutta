@@ -1,10 +1,9 @@
 <template>
-  <Section
-    id="contact"
-    class="flex flex-col"
-  >
+  <Section id="contact" class="flex flex-col">
     <h4 class="text-2xl text-gray-300 text-center">Contact</h4>
-    <p class="text-center text-gray-400 text-lg mt-4 px-10">Send us a message and we'll get back to you as soon as possible!</p>
+    <p class="text-center text-gray-400 text-lg mt-4 px-10">
+      Send us a message and we'll get back to you as soon as possible!
+    </p>
     <div class="mt-9 flex gap-5 text-5xl justify-center flex-wrap px-10">
       <form
         accept-charset="UTF-8"
@@ -13,12 +12,9 @@
         class="flex flex-col gap-5 w-150"
       >
         <div class="flex flex-col gap-2 text-base text-gray-300">
-          <label
-            class="ml-1 text-gray-300"
-            for="name"
-            >Name</label
-          >
+          <label class="ml-1 text-gray-300" for="name">Name</label>
           <input
+            autocomplete="name"
             class="grow-1 px-1 border-none outline-none focus-within:outline-fuchsia-500 outline-solid py-1 rounded bg-gray-300 text-dark-900 font-normal text-base"
             type="text"
             id="name"
@@ -29,12 +25,9 @@
         </div>
 
         <div class="flex flex-col gap-2 text-base text-gray-300">
-          <label
-            class="ml-1 text-gray-300"
-            for="email"
-            >Email</label
-          >
+          <label class="ml-1 text-gray-300" for="email">Email</label>
           <input
+            autocomplete="email"
             class="grow-1 px-1 border-none outline-none focus-within:outline-fuchsia-500 outline-solid py-1 rounded bg-gray-300 text-dark-900 font-normal text-base"
             type="email"
             id="email"
@@ -45,11 +38,7 @@
         </div>
 
         <div class="flex flex-col gap-2 text-base text-gray-300">
-          <label
-            class="ml-1 text-gray-300"
-            for="message"
-            >Message</label
-          >
+          <label class="ml-1 text-gray-300" for="message">Message</label>
           <textarea
             class="grow-1 px-1 border-none outline-none focus-within:outline-fuchsia-500 outline-solid py-1 rounded bg-gray-300 text-dark-900 font-normal text-base"
             id="message"
@@ -72,20 +61,20 @@
 </template>
 
 <script setup lang="ts">
-const name = ref()
-const email = ref()
-const message = ref()
+const name = ref();
+const email = ref();
+const message = ref();
 
 // TODO: Set up mail service in backend and send an email, this requires a server route ?
 const sendMessage = () => {
-  console.log('The Name is :', name.value)
-  console.log('The Email is :', email.value)
-  console.log('The Message is :', message.value)
+  console.log("The Name is :", name.value);
+  console.log("The Email is :", email.value);
+  console.log("The Message is :", message.value);
 
   // Only send if user has entered values
   if (name.value && email.value && message.value) {
   }
-}
+};
 </script>
 
 <style></style>
