@@ -9,6 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify-json/fxemoji": "^1.1.4",
     "@iconify-json/ic": "^1.1.13",
     "@iconify-json/logos": "^1.1.33",
     "@nuxt/devtools": "latest",
