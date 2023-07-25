@@ -19,9 +19,9 @@
 
         <NuxtLink
           class="hover:bg-fuchsia-500/80 hover:border-transparent hover:text-dark-900 hover:scale-105 duration-300 cursor-pointer border-2 bg-transparent text-gray-300 text-lg w-fit px-4 py-2 rounded border-gray-300 border-style-solid"
-          to="#skills"
+          to="/demos"
         >
-          Our skills
+          Our demos
         </NuxtLink>
       </div>
     </div>
