@@ -3,16 +3,20 @@ const activeSlide = ref(0);
 provide("carouselData", { activeSlide });
 
 const increaseSlide = () => {
-  activeSlide.value = (activeSlide.value + 1) % numSlides.value;
+  if (numSlides.value) {
+    activeSlide.value = (activeSlide.value + 1) % numSlides.value;
+  }
 };
 
 const decreaseSlide = () => {
-  activeSlide.value =
-    (activeSlide.value - 1 + numSlides.value) % numSlides.value;
+  if (numSlides.value) {
+    activeSlide.value =
+      (activeSlide.value - 1 + numSlides.value) % numSlides.value;
+  }
 };
 
 const slideContainerEl = ref<HTMLElement | null>();
-const numSlides = ref<number>(0);
+const numSlides = ref<number | null>();
 
 const { direction, isSwiping } = useSwipe(slideContainerEl);
 const stopScroll = ref(false);
@@ -33,12 +37,9 @@ watch(
   }
 );
 
-watch(
-  () => slideContainerEl.value,
-  (el) => {
-    numSlides.value = el?.childElementCount as number;
-  }
-);
+onMounted(() => {
+  numSlides.value = slideContainerEl.value?.childElementCount as number;
+});
 </script>
 
 <template>
@@ -69,6 +70,7 @@ watch(
       </button>
     </div>
     <div
+      v-if="numSlides"
       class="absolute pointer-events-none bottom-5 right-5 px-3 py-2 select-none text-dark-900 bg-gray-300 rounded-2"
     >
       {{ activeSlide + 1 }}/{{ numSlides }}

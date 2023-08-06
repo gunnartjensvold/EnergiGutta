@@ -1,6 +1,7 @@
 <template>
   <header>
     <NavBar></NavBar>
+    <BackgroundSvg></BackgroundSvg>
   </header>
-  <slot />
+  <NuxtPage></NuxtPage>
 </template>

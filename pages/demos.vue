@@ -1,5 +1,8 @@
 <template>
-  <Section id="" class="flex flex-col items-center text-center">
+  <Section
+    id=""
+    class="flex flex-col items-center text-center h-screen relative"
+  >
     <div class="flex pt-20 flex-col">
       <div class="flex justify-center items-center">
         <h1 class="text-4xl text-gray-300">Demos</h1>
